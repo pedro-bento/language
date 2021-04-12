@@ -8,8 +8,6 @@ In this documentation the top of the stack is denoted as 's0', the second topmos
 
 1.  jump        (s0)      -> jump to the address stored in s0.
 1.  jump_if     (s0, s1)  -> jump to the address stored in s0 if s1 is not 0.
-  * ? call      : if we end up having a return stack.
-  * ? return    : if we end up having a return stack.
 1.  push        (np)      -> push n0 to the top of the stack.
 1.  drop        (s0)      -> discard the top of the stack.
 1.  dup         (s0)      -> duplicate s0 to the top of the stack.
@@ -22,6 +20,8 @@ In this documentation the top of the stack is denoted as 's0', the second topmos
 1.  and         (s0, s1)  -> and s1 and s0 and push the result to the top of the stack.
 1.  or          (s0, s1)  -> or s1 and s0 and push the result to the top of the stack.
 1.  not         (s0)      -> negate s0 and push the result to the top of the stack.
+1.  halt        ()        -> halt execution.
   * ? load      : add support to load data from memory to the top of stack the stack in the future.
   * ? store     : add support to store data from the top of stack the stack in to memory in the future.
-1.  halt        ()        -> halt execution.
+  * ? call      : if we end up having a return stack.
+  * ? return    : if we end up having a return stack.
